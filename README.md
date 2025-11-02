@@ -45,11 +45,30 @@ npm run storybook:ios
 npm run storybook:android
 ```
 
-**Web:**
+## Components
 
-```bash
-# Start Storybook Web
-npm run storybook:web
+### Sliding Button
+
+![Sliding Button](screenshots/sliding-button.gif)
+
+An interactive sliding button with gesture controls and visual feedback.
+
+**Features:**
+
+- Slide-to-confirm interaction
+- Animated color transition while dragging
+- Auto-reset after completion
+- Customizable text and callback
+
+**Usage:**
+
+```tsx
+import { SlidingButton } from "./components/SlidingButton";
+
+<SlidingButton
+  text="Slide to Confirm"
+  onPress={() => console.log("Confirmed!")}
+/>;
 ```
 
 ## Tech Stack
