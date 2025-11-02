@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react-native";
 import { fn } from "storybook/test";
 import { View } from "react-native";
-import { MyButton } from "./Button";
+import { SlidingButton } from "./SlidingButton";
 
 const meta = {
-  title: "MyButton",
-  component: MyButton,
+  title: "SlidingButton",
+  component: SlidingButton,
   args: {
-    text: "Hello world",
+    text: "Get Started",
   },
   decorators: [
     (Story) => (
@@ -16,7 +16,7 @@ const meta = {
       </View>
     ),
   ],
-} satisfies Meta<typeof MyButton>;
+} satisfies Meta<typeof SlidingButton>;
 
 export default meta;
 
@@ -24,6 +24,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
   args: {
-    onPress: fn(),
+    onPress: () => {
+      console.log("✅ Custom button pressed!");
+    },
   },
 };

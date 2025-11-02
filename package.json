@@ -22,6 +22,7 @@
     "@react-native-community/slider": "5.0.1",
     "expo": "^54.0.20",
     "expo-constants": "~18.0.10",
+    "expo-linear-gradient": "~15.0.7",
     "expo-linking": "~8.0.8",
     "expo-router": "~6.0.13",
     "expo-splash-screen": "~31.0.10",
