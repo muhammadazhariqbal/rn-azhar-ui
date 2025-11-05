@@ -71,6 +71,32 @@ import { SlidingButton } from "./components/SlidingButton";
 />;
 ```
 
+### VoiceRecorderSheet
+
+![VoiceRecorderSheet](screenshots/sheet-voice.gif)
+
+A bottom sheet component for voice recording with transcription display.
+
+**Features:**
+
+- Tap mic button to open/close sheet
+- Animated waveform indicator during recording
+- Scrollable transcription text display
+- Spring animations for smooth transitions
+- Customizable callbacks for start/stop actions
+
+**Usage:**
+
+```tsx
+import { VoiceRecorderSheet } from "./components/VoiceRecorderSheet";
+
+<VoiceRecorderSheet
+  onPress={() => console.log("Button pressed")}
+  callVoiceListener={() => console.log("Recording started")}
+  stopVoiceListener={() => console.log("Recording stopped")}
+/>;
+```
+
 ## Tech Stack
 
 - **React Native** - Mobile framework

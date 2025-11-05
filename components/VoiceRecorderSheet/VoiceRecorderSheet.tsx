@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
 import {
-  Button,
   Dimensions,
   ScrollView,
   StyleSheet,
@@ -11,23 +9,17 @@ import {
 import Animated, {
   CSSAnimationKeyframes,
   useSharedValue,
-  withDelay,
   withSpring,
-  withTiming,
 } from "react-native-reanimated";
 import { Feather, Ionicons } from "@expo/vector-icons";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 interface VoiceRecorderSheetProps {
-  onPress: () => void;
-  text: string;
   transcription: string;
   callVoiceListener: () => void;
   stopVoiceListener: () => void;
 }
 
 export const VoiceRecorderSheet = ({
-  onPress,
-  text,
   transcription,
   callVoiceListener,
   stopVoiceListener,
@@ -38,6 +30,7 @@ export const VoiceRecorderSheet = ({
   const sheetWidth = screenWidth * 0.95;
   const sheetHeight = screenHeight * 0.25;
   const opacity = useSharedValue(0);
+
   const handleOpenSheet = () => {
     height.value = withSpring(sheetHeight);
     callVoiceListener();

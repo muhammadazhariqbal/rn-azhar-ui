@@ -7,7 +7,6 @@ const meta = {
   title: "VoiceRecorderSheet",
   component: VoiceRecorderSheet,
   args: {
-    text: "Get Started",
     transcription:
       "Please remind me tomorrow at 3 PM to give my mom a call, just so I can catch up with her, check how she’s doing, and make sure everything is okay.",
   },
@@ -26,9 +25,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
   args: {
-    onPress: () => {
-      console.log("✅ Custom button pressed!");
-    },
     callVoiceListener: () => {
       fn();
     },
