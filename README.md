@@ -1,4 +1,4 @@
-![cover image](screenshots/cover repo.png)
+![Sliding Button](screenshots/cover-repo.png)
 
 
 # Azhar UI
