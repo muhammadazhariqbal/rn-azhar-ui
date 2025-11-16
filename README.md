@@ -1,6 +1,5 @@
 ![cover](screenshots/cover-repo.png)
 
-
 # Azhar UI
 
 A collection of reusable UI components for React Native.
@@ -97,6 +96,46 @@ import { VoiceRecorderSheet } from "./components/VoiceRecorderSheet";
   onPress={() => console.log("Button pressed")}
   callVoiceListener={() => console.log("Recording started")}
   stopVoiceListener={() => console.log("Recording stopped")}
+/>;
+```
+
+### Info Carousel
+
+![InfoCarousel](screenshots/carousel.gif)
+
+swipeable carousel with headlines, subtext, and optional buttons. Perfect for onboarding screens, feature highlights, or tips.
+
+**Features**
+
+- Swipe left/right to navigate between items
+
+- Clickable buttons for actions
+
+- Auto-next to the next item
+
+**Usage:**
+
+```tsx
+import InfoCarousel from "./InfoCarousel";
+
+<InfoCarousel
+  items={[
+    {
+      id: 1,
+      subtext: "Hello there!",
+      heading: "Get timely reminders so nothing slips ",
+    },
+    {
+      id: 2,
+      subtext: "Easy to use",
+      heading: "Scheduled Instantly added to your calendar",
+    },
+    {
+      id: 3,
+      subtext: "Let's begin.",
+      heading: "Speak Your Plans Just say what you need to do",
+    },
+  ]}
 />;
 ```
 
